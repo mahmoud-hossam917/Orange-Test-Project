@@ -2,14 +2,16 @@ import 'package:flutter/material.dart';
 
 import 'package:testmahmoud/Views/Pages/Login.dart';
 import 'package:testmahmoud/Views/Pages/PageNews.dart';
+import 'package:testmahmoud/database/remote/dioHelper.dart';
 
 import 'Views/Pages/Sign up.dart';
 
+import 'dart:ui';
 
 
 
-
-void main() {
+void main() async{
+  await DioHelper.inti();
   runApp(const MyApp());
 }
 
@@ -24,7 +26,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home:PageNews(),
+      home:SignUp(),
       debugShowCheckedModeBanner: false,
     );
   }

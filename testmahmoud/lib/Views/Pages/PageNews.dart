@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:testmahmoud/Views/Component/Editbutton.dart';
 import 'package:testmahmoud/Views/Component/edittext.dart';
-
+import 'dart:ui';
 class PageNews extends StatelessWidget {
   const PageNews({Key? key}) : super(key: key);
 

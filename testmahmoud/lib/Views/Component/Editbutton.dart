@@ -38,7 +38,9 @@ class EditButton extends StatelessWidget {
                   borderRadius: BorderRadius.circular(8))),
           onPressed:onPressed,
           child: Row(
-            children: [icon!,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+
               EditText(
                 text: "$text",
                 color: color,

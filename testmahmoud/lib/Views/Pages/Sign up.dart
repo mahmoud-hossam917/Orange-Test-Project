@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:testmahmoud/ViewModel/signup_cubit/SignUpCubit.dart';
 import 'package:testmahmoud/Views/Component/EditTextForm.dart';
 import 'package:testmahmoud/Views/Component/Editbutton.dart';
 import 'package:testmahmoud/Views/Component/edittext.dart';
-
+import 'dart:ui';
 import 'Login.dart';
 
 class SignUp extends StatelessWidget {
@@ -92,6 +93,15 @@ class SignUp extends StatelessWidget {
                             isScure: true,
                           ),
                         ),
+                        Padding(
+                          padding: EdgeInsets.all(10),
+                          child: EditTextForm(
+                            text: "Phone Number",
+                            ColorOfLabel: Colors.grey[400],
+                            ColorOfline: Colors.deepOrange,
+                            isScure: false,
+                          ),
+                        ),
                       ],
                     )),
 
@@ -99,7 +109,10 @@ class SignUp extends StatelessWidget {
                   height: height * .06,
                 ),
                 EditButton(
-                  onPressed:(){
+
+                  onPressed:() async{
+                    var s=SignupCubit.GetInstence(context);
+                    await s.SignUp();
                     Navigator.of(context)
                         .push(MaterialPageRoute(builder: (context) => Login()));
                   } ,
