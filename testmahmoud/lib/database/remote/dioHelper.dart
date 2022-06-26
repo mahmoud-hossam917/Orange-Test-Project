@@ -11,14 +11,19 @@ class DioHelper {
   }
 
   static Future<Response> PostData(
-      {required String url, required Map<String, dynamic> data}) async {
+      {required String url,
+      required Map<String, dynamic> data,
+      String? token}) async {
+
+
     dynamic recieveData = await dio?.post(url, data: data);
+
 
     return recieveData;
   }
 
   static Future<Response> GetData(
-      {required String url, required Map<String, dynamic> data}) async {
+      {required String url, Map<String, dynamic>? data, String? token}) async {
     dynamic recieveData = await dio?.get(url, queryParameters: data);
     return recieveData;
   }

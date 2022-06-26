@@ -4,13 +4,13 @@ import 'package:testmahmoud/Views/Pages/Login.dart';
 import 'package:testmahmoud/Views/Pages/PageNews.dart';
 import 'package:testmahmoud/database/remote/dioHelper.dart';
 
+import 'Views/Pages/Terms.dart';
 import 'Views/Pages/Sign up.dart';
 
 import 'dart:ui';
 
-
-
-void main() async{
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   await DioHelper.inti();
   runApp(const MyApp());
 }
@@ -22,13 +22,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home:SignUp(),
+      home: About(),
       debugShowCheckedModeBanner: false,
     );
   }
 }
-
