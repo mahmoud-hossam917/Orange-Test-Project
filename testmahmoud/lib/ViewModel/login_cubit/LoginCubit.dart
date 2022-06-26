@@ -11,6 +11,7 @@ import 'package:testmahmoud/Views/Pages/Login.dart';
 import 'package:testmahmoud/database/remote/dioHelper.dart';
 import 'package:testmahmoud/database/remote/dio_exceptions.dart';
 import 'package:testmahmoud/database/remote/dio_exceptions.dart';
+<<<<<<< HEAD
 
 class LoginCubit extends Cubit<LoginState> {
   LoginCubit() : super(Intistate());
@@ -32,4 +33,24 @@ class LoginCubit extends Cubit<LoginState> {
   }
 
 
+=======
+
+class LoginCubit extends Cubit<LoginState> {
+  LoginCubit() : super(Intistate());
+  static LoginCubit GetInstence(context) => BlocProvider.of(context);
+
+  Login({required Map<String, dynamic> data}) async {
+    emit(LoginLoading());
+    try {
+      await DioHelper.PostData(url: login, data: data).then((value) {
+        emit(LoginSuccess());
+      });
+      return true;
+    } on DioError catch (e) {
+      emit(LoginError(e));
+
+      return CatchError(e);
+    }
+  }
+>>>>>>> 320eb23a15c2490381983a788315b8a431baa13f
 }

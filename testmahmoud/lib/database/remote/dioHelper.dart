@@ -14,11 +14,20 @@ class DioHelper {
       {required String url,
       required Map<String, dynamic> data,
       String? token}) async {
+<<<<<<< HEAD
 
 
     dynamic recieveData = await dio?.post(url, data: data);
 
 
+=======
+    print("mahmoud hossam ------------------------\n");
+
+    dynamic recieveData = await dio?.post(url, data: data);
+
+    print("is--------------------------\n");
+    print("${recieveData}-----------------------\n");
+>>>>>>> 320eb23a15c2490381983a788315b8a431baa13f
     return recieveData;
   }
 

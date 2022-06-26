@@ -9,13 +9,19 @@ import 'package:testmahmoud/Views/Component/Editbutton.dart';
 import 'package:testmahmoud/Views/Component/edittext.dart';
 import 'dart:ui';
 import '../../Models/Modelsign.dart';
+<<<<<<< HEAD
 import '../Component/validation.dart';
+=======
+>>>>>>> 320eb23a15c2490381983a788315b8a431baa13f
 import 'Sign up.dart';
 
 class Login extends StatelessWidget {
   Login({Key? key}) : super(key: key);
   GlobalKey<FormState> globalKey = new GlobalKey<FormState>();
+<<<<<<< HEAD
 
+=======
+>>>>>>> 320eb23a15c2490381983a788315b8a431baa13f
   @override
   Widget build(BuildContext context) {
     var height = MediaQuery.of(context).size.height;
@@ -99,6 +105,7 @@ class Login extends StatelessWidget {
                                 Padding(
                                     padding: EdgeInsets.all(10),
                                     child: EditTextForm(
+<<<<<<< HEAD
                                         Check: (val) {
                                           if (val == null || val.length == 0)
                                             return "Please enter your email!";
@@ -106,6 +113,8 @@ class Login extends StatelessWidget {
                                               .hasMatch(val))
                                             return "email must be valid";
                                         },
+=======
+>>>>>>> 320eb23a15c2490381983a788315b8a431baa13f
                                         value: 0,
                                         text: "Email",
                                         ColorOfLabel: Colors.grey[400],
