@@ -1,11 +1,7 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 
-<<<<<<< HEAD
 
-=======
-import 'DioHelper.dart';
->>>>>>> 320eb23a15c2490381983a788315b8a431baa13f
 
 class DioExceptions implements Exception {
   String? message;

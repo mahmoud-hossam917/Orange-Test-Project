@@ -39,10 +39,7 @@ dependencies:
   bloc: ^8.0.3
   awesome_dialog: ^2.2.1
   modal_progress_hud_nsn: ^0.2.1
-<<<<<<< HEAD
   simple_html_css: ^3.0.1+1
-=======
->>>>>>> 320eb23a15c2490381983a788315b8a431baa13f
 
 dev_dependencies:
   flutter_test:

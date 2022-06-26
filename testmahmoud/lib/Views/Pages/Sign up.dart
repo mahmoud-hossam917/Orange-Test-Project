@@ -9,10 +9,7 @@ import 'package:testmahmoud/Views/Component/EditTextForm.dart';
 import 'package:testmahmoud/Views/Component/Editbutton.dart';
 import 'package:testmahmoud/Views/Component/edittext.dart';
 import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
-<<<<<<< HEAD
 import 'package:testmahmoud/Views/Component/validation.dart';
-=======
->>>>>>> 320eb23a15c2490381983a788315b8a431baa13f
 import 'dart:ui';
 import 'Login.dart';
 
@@ -116,7 +113,6 @@ class SignUp extends StatelessWidget {
                                     Padding(
                                       padding: EdgeInsets.all(10),
                                       child: EditTextForm(
-<<<<<<< HEAD
                                           Check: (val) {
                                             if (val == null || val.length == 0)
                                               return "Please enter name!";
@@ -124,8 +120,6 @@ class SignUp extends StatelessWidget {
                                                 .hasMatch(val))
                                               return "Name must be valid";
                                           },
-=======
->>>>>>> 320eb23a15c2490381983a788315b8a431baa13f
                                           value: 0,
                                           text: "Name",
                                           ColorOfLabel: Colors.grey[400],
@@ -135,7 +129,6 @@ class SignUp extends StatelessWidget {
                                     Padding(
                                       padding: EdgeInsets.all(10),
                                       child: EditTextForm(
-<<<<<<< HEAD
                                           Check: (val) {
                                             if (val == null || val.length == 0)
                                               return "Please enter your email!";
@@ -143,8 +136,6 @@ class SignUp extends StatelessWidget {
                                                 .hasMatch(val))
                                               return "email must be valid";
                                           },
-=======
->>>>>>> 320eb23a15c2490381983a788315b8a431baa13f
                                           value: 1,
                                           text: "Email",
                                           ColorOfLabel: Colors.grey[400],
@@ -164,7 +155,6 @@ class SignUp extends StatelessWidget {
                                     Padding(
                                       padding: EdgeInsets.all(10),
                                       child: EditTextForm(
-<<<<<<< HEAD
                                         Check: (val) {
                                           if (val == null || val.length == 0)
                                             return "Please enter your phone number!";
@@ -173,8 +163,6 @@ class SignUp extends StatelessWidget {
                                             return "Phone number must be valid";
                                         },
                                         typeKeyboard: TextInputType.number,
-=======
->>>>>>> 320eb23a15c2490381983a788315b8a431baa13f
                                         value: 3,
                                         text: "Phone Number",
                                         ColorOfLabel: Colors.grey[400],
@@ -197,13 +185,10 @@ class SignUp extends StatelessWidget {
                                   ),
                                 ),
                                 DropdownButton(
-<<<<<<< HEAD
                                   underline: Container(
                                     height: 2,
                                     color: Colors.orange,
                                   ),
-=======
->>>>>>> 320eb23a15c2490381983a788315b8a431baa13f
                                   onChanged: (val) {
                                     cubit.ChangeGender(val);
                                   },
@@ -222,7 +207,6 @@ class SignUp extends StatelessWidget {
                                     text: "Grade",
                                   ),
                                 ),
-<<<<<<< HEAD
                                 Container(
                                   child: DropdownButton(
                                     elevation: 18,
@@ -236,14 +220,6 @@ class SignUp extends StatelessWidget {
                                     value: cubit.grade,
                                     items: gradeItems,
                                   ),
-=======
-                                DropdownButton(
-                                  onChanged: (val) {
-                                    cubit.ChangeGrade(val);
-                                  },
-                                  value: cubit.grade,
-                                  items: gradeItems,
->>>>>>> 320eb23a15c2490381983a788315b8a431baa13f
                                 ),
                               ],
                             ),
@@ -261,13 +237,10 @@ class SignUp extends StatelessWidget {
                                 (state is UniversityLoading)
                                     ? Container()
                                     : DropdownButton(
-<<<<<<< HEAD
                                         underline: Container(
                                           height: 2,
                                           color: Colors.orange,
                                         ),
-=======
->>>>>>> 320eb23a15c2490381983a788315b8a431baa13f
                                         onChanged: (val) {
                                           cubit.ChangeUniversity(val);
                                         },

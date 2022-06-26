@@ -22,11 +22,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-<<<<<<< HEAD
       home: About(),
-=======
-      home: Login(),
->>>>>>> 320eb23a15c2490381983a788315b8a431baa13f
       debugShowCheckedModeBanner: false,
     );
   }

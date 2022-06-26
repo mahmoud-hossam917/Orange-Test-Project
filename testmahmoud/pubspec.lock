@@ -193,7 +193,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "4.1.0"
-<<<<<<< HEAD
   simple_html_css:
     dependency: "direct main"
     description:
@@ -201,8 +200,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "3.0.1+1"
-=======
->>>>>>> 320eb23a15c2490381983a788315b8a431baa13f
   sky_engine:
     dependency: transitive
     description: flutter
@@ -273,8 +270,4 @@ packages:
     version: "5.4.1"
 sdks:
   dart: ">=2.17.3 <3.0.0"
-<<<<<<< HEAD
   flutter: ">=2.0.0"
-=======
-  flutter: ">=1.20.0"
->>>>>>> 320eb23a15c2490381983a788315b8a431baa13f
